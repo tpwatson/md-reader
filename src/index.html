@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>MD Reader</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <div class="brand">MD Reader</div>
+      <div id="filename" class="filename">No file open</div>
+      <div class="actions">
+        <button id="find-toggle" type="button" title="Find (Ctrl+F)">Find</button>
+        <button id="open-file" class="primary" type="button" title="Open (Ctrl+O)">Open</button>
+        <button id="make-default" type="button">Use for .md files</button>
+      </div>
+    </header>
+    <form id="findbar" hidden>
+      <input id="find-input" type="search" placeholder="Find in document" aria-label="Find in document" autocomplete="off" spellcheck="false" />
+      <button type="submit">Next</button>
+      <button id="find-prev" type="button">Previous</button>
+      <button id="find-close" type="button">Close</button>
+    </form>
+    <main id="reader">
+      <section id="empty" class="empty">
+        <h1>Read a Markdown file</h1>
+        <p>Open a file, or drop one on this window. After you install MD Reader, use <strong>Use for .md files</strong> and double-click any <code>.md</code> file to open it here.</p>
+        <button id="empty-open" class="primary" type="button">Open a file</button>
+      </section>
+      <article id="doc" class="doc" hidden></article>
+    </main>
+    <div id="drop-overlay" class="drop-overlay">Drop to open</div>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

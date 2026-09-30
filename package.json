@@ -1,0 +1,13 @@
+{
+  "name": "md-reader",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Lightweight Markdown reader",
+  "type": "module",
+  "scripts": {
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
