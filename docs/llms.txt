@@ -1,0 +1,16 @@
+# MD Reader
+
+> Windows app that opens .md files when you double-click them.
+
+MD Reader is a free app for Windows 10 and Windows 11. It reads Markdown files. After installation, click Use for .md files, check .md in the Windows list, and click Save. Double-clicking a .md, .markdown, .mdown, or .mkd file then opens it in MD Reader.
+
+## Install
+
+- [Project page](https://tpwatson.github.io/md-reader/): what MD Reader does and how to install it
+- [Download page](https://github.com/tpwatson/md-reader/releases/latest): latest Windows installer
+- [Installer 0.1.0](https://github.com/tpwatson/md-reader/releases/download/v0.1.0/MD.Reader_0.1.0_x64-setup.exe): file name MD.Reader_0.1.0_x64-setup.exe
+- [README](https://github.com/tpwatson/md-reader/blob/main/README.md): install steps and how to make MD Reader the default app for .md files
+
+## Source
+
+- [Repository](https://github.com/tpwatson/md-reader): source code, MIT license

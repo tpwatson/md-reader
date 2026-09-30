@@ -1,6 +1,8 @@
 # MD Reader
 
-MD Reader is a small Windows app for reading Markdown files. Install it once, then double-click any `.md` file to open it here.
+MD Reader is a free Windows app for reading Markdown files. Install it once, then double-click any `.md` file to open it here.
+
+Project page: https://tpwatson.github.io/md-reader/
 
 ![MD Reader ready for a file](docs/welcome.png)
 
@@ -8,7 +10,7 @@ MD Reader is a small Windows app for reading Markdown files. Install it once, th
 
 ## Install MD Reader
 
-1. Open the [MD Reader download page](https://github.com/tpwatson/md-reader/releases/latest). If GitHub asks you to sign in, sign in, then open that link again.
+1. Open the [MD Reader download page](https://github.com/tpwatson/md-reader/releases/latest).
 2. Scroll down to **Assets**.
 3. Click **MD.Reader_0.1.0_x64-setup.exe**. Leave the **Source code** links alone. Those are for people who write software.
 4. The file downloads to your **Downloads** folder. If the browser asks whether to keep it, choose **Keep**.
@@ -58,3 +60,5 @@ npm run tauri build
 ```
 
 The installer is written to `src-tauri/target/release/bundle/nsis/`.
+
+MD Reader is free under the MIT license.

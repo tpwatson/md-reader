@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MD Reader for Windows — open .md files by double-click</title>
+  <meta name="description" content="Free Windows app that opens Markdown files when you double-click them. Download the installer and set MD Reader as the default app for .md files.">
+  <link rel="canonical" href="https://tpwatson.github.io/md-reader/">
+  <meta property="og:title" content="MD Reader for Windows">
+  <meta property="og:description" content="Free Windows app that opens Markdown files when you double-click them.">
+  <meta property="og:url" content="https://tpwatson.github.io/md-reader/">
+  <meta property="og:image" content="https://tpwatson.github.io/md-reader/reading.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="https://raw.githubusercontent.com/tpwatson/md-reader/main/src-tauri/icons/32x32.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MD Reader",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "softwareVersion": "0.1.0",
+    "description": "Free Windows app that opens Markdown files when you double-click them.",
+    "downloadUrl": "https://github.com/tpwatson/md-reader/releases/download/v0.1.0/MD.Reader_0.1.0_x64-setup.exe",
+    "installUrl": "https://github.com/tpwatson/md-reader/releases/latest",
+    "url": "https://tpwatson.github.io/md-reader/",
+    "image": "https://tpwatson.github.io/md-reader/reading.png",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Terence Watson",
+      "url": "https://github.com/tpwatson"
+    },
+    "license": "https://github.com/tpwatson/md-reader/blob/main/LICENSE",
+    "codeRepository": "https://github.com/tpwatson/md-reader"
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f1ea;
+      --text: #241f1a;
+      --muted: #6f675c;
+      --line: #e2dacd;
+      --accent: #8c4a2f;
+      --card: #fffdf9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --bg: #1b1916;
+        --text: #f0eadf;
+        --muted: #b1a79a;
+        --line: #3a342c;
+        --accent: #e0a37a;
+        --card: #23201c;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 18px/1.5 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    }
+    main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 0.6rem; }
+    h2 { font-size: 1.35rem; margin: 2.2rem 0 0.6rem; }
+    p { margin: 0.6rem 0; }
+    a { color: var(--accent); }
+    .lead { font-size: 1.2rem; }
+    .download {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.7rem 1rem;
+      background: var(--accent);
+      color: var(--bg);
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    figure { margin: 1.2rem 0; }
+    img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--card); }
+    figcaption { color: var(--muted); font: 0.85rem/1.4 "Segoe UI", system-ui, sans-serif; margin-top: 0.4rem; }
+    ol { padding-left: 1.2rem; }
+    li { margin: 0.35rem 0; }
+    code { font-family: Consolas, "Cascadia Mono", monospace; font-size: 0.92em; }
+    footer { margin-top: 2.5rem; color: var(--muted); font: 0.9rem/1.4 "Segoe UI", system-ui, sans-serif; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MD Reader</h1>
+    <p class="lead">MD Reader is a free Windows app for reading Markdown files. Install it once, then double-click any <code>.md</code> file to open it here.</p>
+    <p><a class="download" href="https://github.com/tpwatson/md-reader/releases/download/v0.1.0/MD.Reader_0.1.0_x64-setup.exe">Download MD Reader for Windows</a></p>
+    <p>The download is <code>MD.Reader_0.1.0_x64-setup.exe</code>. It installs for your Windows account and does not ask for an administrator password.</p>
+
+    <figure>
+      <img src="welcome.png" alt="MD Reader open with no file yet, showing the Use for .md files button" width="1026" height="853">
+      <figcaption>MD Reader before a file is open.</figcaption>
+    </figure>
+    <figure>
+      <img src="reading.png" alt="A Markdown file open in MD Reader, with a heading and a list of install steps" width="1026" height="853">
+      <figcaption>A Markdown file open in MD Reader.</figcaption>
+    </figure>
+
+    <h2>Install it</h2>
+    <ol>
+      <li>Click the download button above. The file goes to your Downloads folder. If the browser asks whether to keep it, choose Keep.</li>
+      <li>Double-click <code>MD.Reader_0.1.0_x64-setup.exe</code>.</li>
+      <li>If Windows says it protected your PC, click More info, then Run anyway.</li>
+      <li>Follow the installer until it finishes.</li>
+      <li>Open the Start menu, type MD Reader, and click the app.</li>
+    </ol>
+
+    <h2>Make it open .md files</h2>
+    <ol>
+      <li>In MD Reader, click <strong>Use for .md files</strong>.</li>
+      <li>Windows opens a list of file types.</li>
+      <li>Check <code>.md</code>. Also check <code>.markdown</code>, <code>.mdown</code>, and <code>.mkd</code> if those appear.</li>
+      <li>Click Save.</li>
+    </ol>
+    <p>Double-click a Markdown file. It opens in MD Reader. If a file still opens in another program, right-click it, choose Open with, then Choose another app, and select MD Reader. On Windows 11, click Always. On Windows 10, check Always use this app to open .md files, then click OK.</p>
+
+    <footer>
+      <p>MD Reader runs on Windows 10 and Windows 11. Source and license: <a href="https://github.com/tpwatson/md-reader">github.com/tpwatson/md-reader</a>. Facts for agents: <a href="llms.txt">llms.txt</a>.</p>
+    </footer>
+  </main>
+</body>
+</html>
