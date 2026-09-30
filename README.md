@@ -1,23 +1,32 @@
 # MD Reader
 
-A small Windows app for reading Markdown. Install it, set it as the default app, and double-click any `.md` file to open it here.
+MD Reader is a small Windows app for reading Markdown files. Install it once, then double-click any `.md` file to open it here.
 
 ![MD Reader ready for a file](docs/welcome.png)
 
 ![A Markdown file open in MD Reader](docs/reading.png)
 
-## Download and install
+## Install MD Reader
 
-1. Open the [latest release](https://github.com/tpwatson/md-reader/releases/latest).
-2. Download `MD Reader_0.1.0_x64-setup.exe`.
-3. Run the installer. It installs for the current Windows user and does not ask for an administrator password.
-4. Open **MD Reader** from the Start menu.
-5. Click **Use for .md files**.
-6. In the Windows list, check the Markdown extensions and save.
+1. Open the [MD Reader download page](https://github.com/tpwatson/md-reader/releases/latest). If GitHub asks you to sign in, sign in, then open that link again.
+2. Scroll down to **Assets**.
+3. Click **MD.Reader_0.1.0_x64-setup.exe**. Leave the **Source code** links alone. Those are for people who write software.
+4. The file downloads to your **Downloads** folder. If the browser asks whether to keep it, choose **Keep**.
+5. Open **Downloads** and double-click **MD.Reader_0.1.0_x64-setup.exe**.
+6. If Windows says it protected your PC, click **More info**, then **Run anyway**.
+7. Follow the installer until it finishes. It installs for your Windows account only, so it does not ask for an administrator password.
+8. Open the Start menu, type **MD Reader**, and click the app.
 
-After that, double-clicking a `.md`, `.markdown`, `.mdown`, or `.mkd` file opens it in MD Reader. If the app is already open, the new file replaces the one you are reading.
+## Make MD Reader open .md files
 
-You can also right-click a Markdown file, choose **Open with**, and pick **MD Reader**.
+1. In the MD Reader window, click **Use for .md files**.
+2. Windows opens a list of file types. A short note in MD Reader says that list is open.
+3. Check **.md**. Also check **.markdown**, **.mdown**, and **.mkd** if those appear.
+4. Click **Save**.
+
+Find a Markdown file and double-click it. It opens in MD Reader. If MD Reader is already open, the new file replaces the one on screen.
+
+If the file still opens in another program, right-click it and choose **Open with**, then **Choose another app**. Select **MD Reader**. On Windows 11, click **Always**. On Windows 10, check **Always use this app to open .md files**, then click **OK**.
 
 ## Reading
 
@@ -29,11 +38,13 @@ You can also right-click a Markdown file, choose **Open with**, and pick **MD Re
 | Click a link to another `.md` file | Open it in MD Reader |
 | Click a web link | Open it in your browser |
 
-Images stored next to the Markdown file are shown in the page. If you save the file from another editor, MD Reader refreshes.
+Pictures stored next to the Markdown file show up in the page. When you save the file from another program, MD Reader refreshes.
 
-## Build from source
+## Building the app yourself
 
-You need Rust, Node.js, and the Microsoft C++ build tools (WebView2 is already on Windows 10 and 11).
+Skip this section if you already installed MD Reader from the download above.
+
+You need Rust, Node.js, and the Microsoft C++ build tools. WebView2 is already on Windows 10 and 11.
 
 ```
 npm install
